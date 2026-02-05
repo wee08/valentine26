@@ -7,7 +7,7 @@ body {
   background-image: url("./assets/background.jpg");
   background-size: contain;
   font-family: "Pixelify Sans", sans-serif;
-  padding: 0 18em;
+  padding: 0 1em;
 }
 
 /* Envelope Screen */
@@ -43,7 +43,7 @@ body {
 }
 
 .letter-window {
-  width: 90vw;
+  width: 70vw;
   max-width: 800px;
   aspect-ratio: 3/2;
   padding: 20px 20px 0 20px;
@@ -98,7 +98,6 @@ p {
   display: flex;
   justify-content: center;
   position: relative;
-  margin: 0 120px;
 }
 
 .no-wrapper {
@@ -107,7 +106,7 @@ p {
 
 .btn {
   display: inline-block;
-  min-width: 300px;
+  min-width: 200px;
   cursor: pointer;
   user-select: none;
   margin-top: -30px;
@@ -115,10 +114,11 @@ p {
 
 .yes-btn,
 .no-btn {
-  width: 120px;
+  width: 100px;
   height: auto;
   position: absolute;
   overflow: visible;
+  margin-top: 3em;
 }
 
 .yes-btn {
