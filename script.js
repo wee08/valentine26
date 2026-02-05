@@ -8,7 +8,8 @@ const title = document.getElementById("letter-title");
 const catImg = document.getElementById("letter-cat");
 const buttons = document.getElementById("letter-buttons");
 const finalText = document.getElementById("final-text");
-
+let scaleIn = 1;
+let scaleOut = 1;
 // Click Envelope
 
 envelope.addEventListener("click", () => {
@@ -37,8 +38,11 @@ noBtn.addEventListener("click", () => {
     catImg.src = "./assets/cat-cat-meme.gif";
   } else {
     function moveRandom(elm) {
-      elm.style.top = Math.floor(Math.random() * 90 + 5) + "%";
-      elm.style.left = Math.floor(Math.random() * 90 + 5) + "%";
+      scaleIn -= 0.1;
+      scaleOut += 0.4;
+      elm.style.scale = scaleIn;
+      yesBtn.style.scale = scaleOut;
+      console.log(scaleIn);
     }
     noBtn.addEventListener("click", function (e) {
       moveRandom(e.target);
